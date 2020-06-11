@@ -14,33 +14,39 @@
     <div class="container">    
     <div class="card-deck">
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../img/pc_gamer.jpg" class="card-img-top" alt="P">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Computadora gamer</h5>
+                <p class="card-text">Descripción de la pc gamer</p>
+                <p class="card-text">Precio : $10,500</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-text"><small class="text-muted">Cantidad : 30</small></p>
+                <center><button class="btn btn-success">Agregar al carrito</button></center>
             </div>
         </div>
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../img/samsung_A50.jpg" class="card-img-top" alt="Samsung">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title">Samsumg Galaxy A50</h5>
+                <p class="card-text">Descripción del Samsumg Galaxy A50</p>
+                <p class="card-text">Precio : $6,000</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text"><small class="text-muted">Cantidad : 10</small></p>
+            <center><button class="btn btn-success">Agregar al carrito</button></center>
             </div>
         </div>
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="../img/iphone11.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <h5 class="card-title">Iphone 11</h5>
+                <p class="card-text">Descripción del Iphone 11</p>                
+                <p class="card-text">Precio : $17,499</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text"><small class="text-muted">Cantidad : 30</small></p>
+            <center><button class="btn btn-success">Agregar al carrito</button></center>
             </div>
         </div>
     </div>
