@@ -1,3 +1,11 @@
 nav{
     margin-bottom: 2em;
 }
+.card-img-top{
+    height: 20em;
+    width: 2em;
+}
+.img-circle{
+    height: 3em;
+    width: 5em;
+}
