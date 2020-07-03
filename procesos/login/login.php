@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once '../../clases/config.class.php';
 require_once '../../clases/usuario.class.php';
@@ -10,4 +11,12 @@ $datos = array(
     $_POST['password']
 );
 
-echo $obj->loginUsuario($datos);
+$resultado = $obj->loginUsuario($datos);
+
+if($resultado){
+    header("Location: ../../vistas/index.php");
+}
+else{
+    die("El correo o la contraseña no son correctas");
+}
+
