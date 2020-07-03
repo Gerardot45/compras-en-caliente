@@ -10,7 +10,7 @@
     <div class="container">
         <h2>Inicio de sesión</h2>
         <p>Coloque los datos para poder acceder al sistema</p>
-        <form class="form-inline" action="../procesos/login/login.php">
+        <form class="form-inline" action="../procesos/login/login.php" method="POST">        
             <label for="email" class="mb-2 mr-sm-2">Email:</label>
             <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="Correo Electrónico" name="email" required><br>
             <label for="password" class="mb-2 mr-sm-2">Contraseña:</label>
