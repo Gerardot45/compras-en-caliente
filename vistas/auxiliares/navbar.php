@@ -1,3 +1,6 @@
+<?php session_start();
+?>
+
 <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
     <a class="navbar-brand" href="../vistas/"><img src="../img/logo.jpg" alt="log_equipo" style="width:50px; border-radius:10px;" /> Compras en caliente</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -34,6 +37,8 @@
                 </a>
             </li>
 
+            <?php if(isset($_SESSION['email'])){ ?>
+
             <!-- Dropdown del perfil del usuario-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -63,6 +68,8 @@
                 </div>
             </li>
 
+            <?php } else {?>
+
             <!-- Dropdown del los registros e inicio de sesión-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -83,6 +90,7 @@
                     </a>
                 </div>
             </li>
+            <?php }?>
         </ul>
     </div>
 </nav>
