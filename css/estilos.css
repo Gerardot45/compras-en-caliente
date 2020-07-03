@@ -1,11 +1,19 @@
-nav{
-    margin-bottom: 2em;
+nav {
+  margin-bottom: 2em;
 }
-.card-img-top{
-    height: 20em;
-    width: 2em;
+.card-img-top {
+  height: 20em;
+  width: 2em;
 }
-.img-circle{
-    height: 3em;
-    width: 5em;
+.img-circle {
+  height: 3em;
+  width: 5em;
 }
+/* 
+body {
+  background: url(../img/fondo-pantalla.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */

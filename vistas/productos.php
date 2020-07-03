@@ -22,7 +22,7 @@
             </div>
             <div class="card-footer">
                 <p class="card-text"><small class="text-muted">Cantidad : 30</small></p>
-                <center><button class="btn btn-success">Agregar al carrito</button></center>
+                <center><button class="btn btn-primary">Agregar al carrito</button></center>
             </div>
         </div>
         <div class="card">
@@ -34,7 +34,7 @@
             </div>
             <div class="card-footer">
             <p class="card-text"><small class="text-muted">Cantidad : 10</small></p>
-            <center><button class="btn btn-success">Agregar al carrito</button></center>
+            <center><button class="btn btn-primary">Agregar al carrito</button></center>
             </div>
         </div>
         <div class="card">
@@ -46,7 +46,7 @@
             </div>
             <div class="card-footer">
             <p class="card-text"><small class="text-muted">Cantidad : 30</small></p>
-            <center><button class="btn btn-success">Agregar al carrito</button></center>
+            <center><button class="btn btn-primary">Agregar al carrito</button></center>
             </div>
         </div>
     </div>

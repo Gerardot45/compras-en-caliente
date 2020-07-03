@@ -14,7 +14,7 @@
     <div class="container">
     <div class="container">
             <center>
-                <button class="btn btn-success">Comprar todo el carrito</button>
+                <button class="btn btn-primary">Comprar todo el carrito</button>
                 <button class="btn btn-danger">Quitar todo de la lista</button>
             </center>
             <br>
@@ -28,7 +28,7 @@
                         <h5 class="card-title">Iphone 11</h5>
                         <p class="card-text">Descripción del Iphone 11</p>                    
                         <hr>
-                        <button class="btn btn-success btn-sm">Comprar Artículo</button>
+                        <button class="btn btn-primary btn-sm">Comprar Artículo</button>
                          
                         <button class="btn btn-danger btn-sm">Quitar del carrito</button>
                     </div>
