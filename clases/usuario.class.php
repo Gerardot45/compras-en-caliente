@@ -15,7 +15,7 @@
                                         '$datos[5]',
                                         '$fecha')";                                        
                 $error = mysqli_query($conexion,$sql);
-                if($error == false){
+                if(!$error){
                     throw new mysqli_sql_exception();
                 }
             }
@@ -27,11 +27,19 @@
         public function loginUsuario($datos){
             $c = new Conectar();
             $conexion = $c->conexion();
-            $password = sha1($datos[1]);
-            $sql = "SELECT * FROM compras_en_caliente.usuarios_registrados WHERE email = '$datos[0]' AND password = '$password'";
-            $result = mysqli_query($conexion,$sql);
-
-            if(mysqli_num_rows > 0){
+            $password = sha1($datos[1]);            
+            $sql = "SELECT * FROM compras_en_caliente.usuarios_registrados WHERE email_usuario = '$datos[0]' AND password = '$password'";
+            $result = mysqli_query($conexion,$sql);               
+            if(mysqli_num_rows($result) > 0){            
+                $columna = mysqli_fetch_row($result);
+                var_dump($columna);
+                echo '<br>';
+                $_SESSION['email'] = $columna[0];                                
+                $_SESSION['nombre_usuario'] = $columna[1];                                
+                $_SESSION['primer_apellido'] = $columna[2];
+                $_SESSION['segundo_apellido'] = $columna[3];
+                $_SESSION['direccion'] = $columna[5];
+                $_SESSION['fecha_registro'] = $columna[6];                                
                 return 1;
             }
             else{
