@@ -6,7 +6,7 @@
                 $c = new Conectar();
                 $conexion = $c->conexion();
                 $fecha = date('Y-m-d');
-                $sql = "INSERT INTO compras_en_caliente.usuarios_registrados VALUES 
+                $sql = "INSERT INTO usuarios_registrados VALUES 
                                         ('$datos[0]',
                                         '$datos[1]',
                                         '$datos[2]',
@@ -28,7 +28,7 @@
             $c = new Conectar();
             $conexion = $c->conexion();
             $password = sha1($datos[1]);            
-            $sql = "SELECT * FROM compras_en_caliente.usuarios_registrados WHERE email_usuario = '$datos[0]' AND password = '$password'";
+            $sql = "SELECT * FROM usuarios_registrados WHERE email_usuario = '$datos[0]' AND password = '$password'";
             $result = mysqli_query($conexion,$sql);               
             if(mysqli_num_rows($result) > 0){            
                 $columna = mysqli_fetch_row($result);                
