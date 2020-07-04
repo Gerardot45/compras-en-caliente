@@ -31,9 +31,7 @@
             $sql = "SELECT * FROM compras_en_caliente.usuarios_registrados WHERE email_usuario = '$datos[0]' AND password = '$password'";
             $result = mysqli_query($conexion,$sql);               
             if(mysqli_num_rows($result) > 0){            
-                $columna = mysqli_fetch_row($result);
-                var_dump($columna);
-                echo '<br>';
+                $columna = mysqli_fetch_row($result);                
                 $_SESSION['email'] = $columna[0];                                
                 $_SESSION['nombre_usuario'] = $columna[1];                                
                 $_SESSION['primer_apellido'] = $columna[2];
