@@ -10,16 +10,22 @@
     <?php include_once 'auxiliares/navbar.php'; ?>
     <br><br>
     <div class="container">
-        <h1 class="text-center">INICIO</h1>
+        
+        <?php if(isset($_SESSION['email'])){ ?>
+            <h1 class="text-center">Bienvenido/a <?php echo "<a href=\"perfil_usuario.php\">".$_SESSION['nombre_usuario'].' '.$_SESSION['primer_apellido']."</a>";?></h1>
+        <?php } else{ ?>
+            <h1 class="text-center">Bienvenido/a a nuestra página</h1>
+        <?php }?>
+        <h2 class="text-center">INICIO</h2>
         <div class="row">
             <div class="col-md-4">
                 <h3>Nombre de los integrantes</h3>
                 <br>
                 <ul>
-                    <li>Gerardo Rivera Ramírez</li>
-                    <li>Marco Alexis Sánchez Epifanio</li>
-                    <li>Samuel Gasca Fragoso</li>
-                    <li>Ángel Daniel Huerta Tehuacatl</li>
+                    <li><i>Gerardo Rivera Ramírez</i></li>
+                    <li><i>Marco Alexis Sánchez Epifanio</i></li>
+                    <li><i>Samuel Gasca Fragoso</i></li>
+                    <li><i>Ángel Daniel Huerta Tehuacatl</i></li>
                 </ul>
             </div>
             <div class="col-md-8">

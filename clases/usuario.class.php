@@ -22,6 +22,7 @@
             catch(mysqli_sql_exception $ex){
                 die("Hubo un problema al agregar los datos -> ".$ex);
             }
+            $conexion->close();
         }
 
         public function loginUsuario($datos){

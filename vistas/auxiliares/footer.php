@@ -3,7 +3,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-5">© 2020 Copyright
-    <a href="#"> Representante: Marco Alexis Sánchez Epifanio</a>
+     <i>Representante: <a href="#">Marco Alexis Sánchez Epifanio</a></i>
   </div>
   <!-- Copyright -->
 
