@@ -13,7 +13,7 @@ class Conectar
             $this->usuario,
             $this->password,
             $this->db
-        );
+        );        
         return $conexion;
     }
 }
