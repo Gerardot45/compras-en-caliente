@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Compras en caliente</title>
 </head>
@@ -29,9 +29,13 @@
                 </ul>
             </div>
             <div class="col-md-8">
-                <h3 class="text-center">Misión</h3>
-                <h3 class="text-center">Visión</h3>
                 <h3 class="text-center">Sobre el pequeño proyecto</h3>
+                <hr>
+                <h3 class="text-center">Misión</h3>
+                <div><h5>"Nuestro propósito es el poder adquierir conocimiento escalando a partir de nuestros proyectos"</h5></div>
+                <hr>
+                <h3 class="text-center">Visión</h3>
+                <div class="div"><h5>"Automatizar nuestros procesos"</h5></div>
             </div>
         </div>
     </div>

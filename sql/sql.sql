@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS compras_en_caliente;
 CREATE DATABASE compras_en_caliente;
+ALTER DATABASE compras_en_caliente CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE TABLE usuarios_registrados(
     email_usuario VARCHAR(50) NOT NULL,
     nombre_usuario VARCHAR(50) NOT NULL,
@@ -70,3 +71,27 @@ Ahora con un diseño más liviano y más delgado que nunca
 Disco duro de 1 TB
 Todos los mejores juegos, programas de televisión, música y mucho más.',
 'play4.jpg',25999,5);
+INSERT INTO productos (nombre_producto,descripcion_producto,imagen_producto,precio,cantidad_productos) VALUES ('
+MacBook Air Apple Intel Core i5'
+, 'Agrega a tu carrito esta MacBook Air de Apple
+
+Cuenta con un elegante diseño.
+
+Pantalla de 13 pulgadas.
+
+Delgada y muy ligera para llevarla fácilmente.
+
+Memoria RAM de 8 GB.
+
+Procesador Intel Core i5 de quinta generación.
+
+Capacidad de almacenaje de 128 GB.
+
+Tarjeta de gráficos IntelHD Graphics 6000.',
+'mcair.jpg',16999,3);
+INSERT INTO productos (nombre_producto,descripcion_producto,imagen_producto,precio,cantidad_productos) VALUES ('Apple – Audífonos alámbricos EarPods'
+, 'Los audífonos alámbricos de Apple con entrada de 3.5mm están diseñados a partir de la anatomía del oído, lo que los hace bastante cómodos para usar por varias horas durante el día. Tiene altavoces integrados, lo que se traduce en una perdida mínima del sonido y aumentan la potencia acústica. Además, su manejo es intuitivo al tener integrado en el cable botones para ajustar el volumen, responder llamadas o seleccionar tu música favorita.',
+'airpods.jpg',899,20);
+INSERT INTO productos (nombre_producto,descripcion_producto,imagen_producto,precio,cantidad_productos) VALUES ('Pantalla LG HD 32 pulgadas'
+, 'La pantalla LG HD 32 pulgadas 32lm630bpub potencializará tu experiencia de entretenimiento a cada momento, ya que reúne una selección de características que te permitirán disfrutar de inteligencia artificial en tu TV, con imágenes de extraordinaria calidad, vibrantes tonalidades, contrastes y brillo, envolvente sonido así como poderosa conectividad que te permitirá disfrutar de tu contenido favorito',
+'smarttv.jpg',899,2);

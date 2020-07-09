@@ -9,3 +9,8 @@ nav {
   height: 3em;
   width: 5em;
 }
+
+.obligatorio{
+  font-size: 24px;
+  color: red;
+}

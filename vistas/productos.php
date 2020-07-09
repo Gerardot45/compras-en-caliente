@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <title>Productos</title>
-    <?php require_once './auxiliares/encabezado.php'; ?>
+    <?php require_once './auxiliares/encabezado.php';?>
 </head>
 
 <body>
