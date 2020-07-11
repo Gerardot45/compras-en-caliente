@@ -1,5 +1,5 @@
+<?php require_once '../../vistas/auxiliares/encabezado.php';?>
 <?php
-
     class Usuarios{
         public function registrarUsuario($datos){
             try{
@@ -20,7 +20,10 @@
                 }
             }
             catch(mysqli_sql_exception $ex){
-                die("Hubo un problema al agregar los datos -> ".$ex);
+                echo "<div class=\"container mt-5\">";
+                echo "<div class=\"alert alert-danger text-center\">La contraseña que introdujo, ya está siendo utilizada por otro usuario.</div>";
+                echo "</div>";
+                die();
             }
             $conexion->close();
         }
