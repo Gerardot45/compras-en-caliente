@@ -43,13 +43,6 @@ function comprobarIdExistente(producto){
     }
 }
 
-function guardarLocalStorage(producto){
-    let productos;
-    productos = obtenerProductosLocalStorege();
-    productos.push(producto);
-    console.log(productos);
-    localStorage.setItem('productos',JSON.stringify(productos));
-}
 function obtenerProductosLocalStorege(){
     let productosLS;
     if(localStorage.getItem('productos') == null){
@@ -59,4 +52,14 @@ function obtenerProductosLocalStorege(){
         productosLS = JSON.parse(localStorage.getItem('productos'));
     }
     return productosLS;
+}
+
+//Create a factorial function
+function factorial(numero){
+    if(numero == 0){
+        return 1;
+    }
+    else{
+        return (numero * factorial(numero-1));
+    }
 }
